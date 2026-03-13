@@ -1,0 +1,14 @@
+{
+  "name": "Skyforge Drones",
+  "short_name": "Skyforge",
+  "icons": [
+    {
+      "src": "/brand/skyforge-favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0f766e",
+  "background_color": "#0f172a",
+  "display": "standalone"
+}

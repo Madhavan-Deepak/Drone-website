@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #FFFFFF;
+  --bg2: #F6F7F9;
+  --surface: #FFFFFF;
+  --text: #0B0F17;
+  --muted: rgba(11, 15, 23, 0.65);
+  --border: rgba(11, 15, 23, 0.12);
+  --accent: #C8102E;
+  --accentHover: #A40E24;
+  --accentSoft: rgba(217, 45, 32, 0.08);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0b0f17 #1a1e27;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Open Sans', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.surface-flat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.surface {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(11, 15, 23, 0.08);
+}
+
+.hero-media {
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px rgba(11, 15, 23, 0.1);
+  overflow: hidden;
+  background: linear-gradient(135deg, #F2F4F7, #FFFFFF);
+}
+
+.nav-blur {
+  background: rgba(11, 15, 23, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hairline {
+  border-color: var(--border);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.hero-placeholder {
+  background: linear-gradient(120deg, #0b0f17 20%, #11182a 40%, #0b0f17 65%);
+  background-size: 200% 100%;
+  animation: heroShimmer 1.8s ease-in-out infinite;
+}
+
+@keyframes heroShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

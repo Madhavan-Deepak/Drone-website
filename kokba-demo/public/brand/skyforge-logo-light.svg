@@ -1,0 +1,15 @@
+<svg viewBox="0 0 272 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="skyforge-logo-light-title">
+  <title id="skyforge-logo-light-title">Skyforge Drones</title>
+  <defs>
+    <linearGradient id="skyforge-light-gradient" x1="6" y1="6" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E" />
+      <stop offset="1" stop-color="#22C55E" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="52" height="52" rx="16" fill="rgba(255,255,255,0.08)" />
+  <path d="M18 18 30 12l12 6-6 12 6 12-12 6-12-6 6-12-6-12Z" fill="url(#skyforge-light-gradient)" opacity="0.18" />
+  <path d="M20 30h20M30 20v20M22.5 22.5l15 15M37.5 22.5l-15 15" stroke="url(#skyforge-light-gradient)" stroke-width="3" stroke-linecap="round" />
+  <circle cx="30" cy="30" r="5" fill="url(#skyforge-light-gradient)" />
+  <text x="70" y="28" fill="#F8FAFC" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700" letter-spacing="2.6">SKYFORGE</text>
+  <text x="70" y="46" fill="#94A3B8" font-family="'Open Sans', sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.6">AUTONOMOUS DRONE SYSTEMS</text>
+</svg>

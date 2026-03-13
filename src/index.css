@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --surface2: #f2f4f7;
+  --text: #0b0f17;
+  --muted: rgba(11, 15, 23, 0.68);
+  --border: rgba(11, 15, 23, 0.12);
+  --accent: #1677ff;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--surface2);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.surface {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.hairline {
+  border-color: var(--border);
+}
+
+.hero-media {
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, #ffffff, #f1f4f9 50%, #e9eef5);
+}
+
+.nav-blur {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
