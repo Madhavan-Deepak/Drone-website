@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "cd kokba-demo && npm install",
+  "buildCommand": "cd kokba-demo && npm run build",
+  "outputDirectory": "kokba-demo/dist"
+}
